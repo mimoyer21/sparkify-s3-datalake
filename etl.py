@@ -167,11 +167,11 @@ def process_log_data(spark, input_data, output_data):
 
 def main():
     spark = create_spark_session()
-#     input_data = "s3a://udacity-dend/" # use this use S3 input data
-    input_data = "data/" # use this for local small dataset as input (for testing only)
+    input_data = "s3a://udacity-dend/" # use this use S3 input data
+    # input_data = "data/" # use this for local small dataset as input (for testing only)
     
-#     output_data = "s3a://mmoyer-sparkify/"  # use this to publish output to S3
-    output_data = "data/output/" # use this to publish output locally (for testing only)
+    output_data = "s3a://mmoyer-sparkify/"  # use this to publish output to S3
+    # output_data = "data/output/" # use this to publish output locally (for testing only)
     
     process_song_data(spark, input_data, output_data)    
     process_log_data(spark, input_data, output_data)
