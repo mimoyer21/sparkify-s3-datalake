@@ -1,0 +1,6 @@
+# File with AWS configuration and credentials
+dl.cfg
+
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
