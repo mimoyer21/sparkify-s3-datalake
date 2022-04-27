@@ -38,7 +38,7 @@ Example querying data via pyspark to get total number of song plays by all users
 
 ```python
 spark = SparkSession.builder.<...>.getOrCreate()
-songplays_df = spark.read.parquet("s3a://mmoyer-sparkfiy/songplays")
+songplays_df = spark.read.parquet("s3a://mmoyer-sparkify/songplays")
 songplays_df.createOrReplaceTempView("songplays")
 spark.sql("""
     select year
