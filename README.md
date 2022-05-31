@@ -1,7 +1,7 @@
 # Readme.md for Sparkify datalake implemented via AWS S3
 
 ## Purpose:
-The purpose of this datalake is to provide datasets that enable answering questions about user behavior in the Sparkify app (especially user song 
+The purpose of this datalake is to provide datasets that enable answering questions about user behavior in the fictional Sparkify music streaming app (especially user song 
 listening behavior). To do so we ingest the app logs of user behavior and song metadata from S3, process the raw data via Spark, and upload 
 processed data back to S3. Analysis to answer business questions can be done on the processed data stored in S3.
 
